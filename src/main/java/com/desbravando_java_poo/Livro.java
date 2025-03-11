@@ -7,6 +7,10 @@ public class Livro {
     private String isbn;
     private Autor autor;
 
+    public Livro(Autor autor) {
+        this.autor = autor;
+    }
+
     void mostrarDetalhes() {
         System.out.println("Mostrando detalhes do livro");
         System.out.printf(
@@ -29,6 +33,8 @@ public class Livro {
     public boolean temAutor() {
         return this.autor != null;
     }
+
+    // Getters e setters 
 
     public String getNome() {
         return nome;
