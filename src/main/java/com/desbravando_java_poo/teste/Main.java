@@ -1,4 +1,9 @@
-package com.desbravando_java_poo;
+package com.desbravando_java_poo.teste;
+
+import com.desbravando_java_poo.CarrinhoDeCompras;
+import com.desbravando_java_poo.livraria.Autor;
+import com.desbravando_java_poo.produtos.Ebook;
+import com.desbravando_java_poo.produtos.LivroFisico;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package com.desbravando_java_poo;
+package com.desbravando_java_poo.produtos;
+
+import com.desbravando_java_poo.livraria.Editora;
 
 public class Revista implements Produto, Promocional {
     private String nome;

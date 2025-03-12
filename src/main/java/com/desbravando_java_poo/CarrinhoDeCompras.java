@@ -1,5 +1,7 @@
 package com.desbravando_java_poo;
 
+import com.desbravando_java_poo.produtos.Produto;
+
 public class CarrinhoDeCompras {
 
     private double total;

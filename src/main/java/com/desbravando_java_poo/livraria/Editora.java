@@ -1,4 +1,4 @@
-package com.desbravando_java_poo;
+package com.desbravando_java_poo.livraria;
 
 public class Editora {
     private String nomeFantasia;

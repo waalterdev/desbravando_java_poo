@@ -1,4 +1,6 @@
-package com.desbravando_java_poo;
+package com.desbravando_java_poo.produtos;
+
+import com.desbravando_java_poo.livraria.Autor;
 
 public class Ebook extends Livro implements Promocional {
     private String waterMark;

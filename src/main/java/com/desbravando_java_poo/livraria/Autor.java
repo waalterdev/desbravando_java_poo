@@ -1,11 +1,11 @@
-package com.desbravando_java_poo;
+package com.desbravando_java_poo.livraria;
 
 public class Autor {
     private String nome;
     private String email;
     private String cpf;
 
-    void mostrarDetalhes() {
+    public void mostrarDetalhes() {
         System.out.printf("Mostrando detalhes do autor\nNome: %s\nEmail: %s\nCPF: %s\n---", nome, email, cpf);
     }
 

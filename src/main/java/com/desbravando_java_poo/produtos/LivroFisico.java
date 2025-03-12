@@ -1,4 +1,6 @@
-package com.desbravando_java_poo;
+package com.desbravando_java_poo.produtos;
+
+import com.desbravando_java_poo.livraria.Autor;
 
 public class LivroFisico extends Livro implements Promocional {
     public LivroFisico(Autor autor) {
