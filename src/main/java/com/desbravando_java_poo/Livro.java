@@ -27,8 +27,6 @@ public abstract class Livro implements Produto {
         }
     }
 
-    public abstract boolean aplicarDesconto(double porcentagem);
-
     public boolean temAutor() {
         return this.autor != null;
     }

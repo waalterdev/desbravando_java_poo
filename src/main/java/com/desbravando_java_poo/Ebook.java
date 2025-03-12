@@ -1,6 +1,6 @@
 package com.desbravando_java_poo;
 
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Promocional {
     private String waterMark;
 
     public Ebook(Autor autor) {
