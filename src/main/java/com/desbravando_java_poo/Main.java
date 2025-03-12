@@ -5,15 +5,23 @@ public class Main {
 
         Autor autor = new Autor();
         autor.setNome("Sherman Walter");
-        autor.setEmail("example@example.com");
-        autor.setCpf("00000000000");
 
         Livro livro = new Livro(autor);
-        livro.setNome("Java 8 Prático");
-        livro.setDescricao("Novos recursos da linguagem");
         livro.setPreco(59.90);
 
-        livro.aplicarDesconto(0.1);
-        livro.mostrarDetalhes();
+        if (!livro.aplicarDesconto(0.3)) {
+            System.out.println("Desconto no livro não pode ser maior do que 30%.\n");
+        } else {
+            System.out.printf("Valor no livro com desconto: R$%.2f\n", livro.getPreco());
+        }
+
+        Ebook ebook = new Ebook(autor);
+        ebook.setPreco(29.90);
+
+        if (!ebook.aplicarDesconto(0.15)) {
+            System.out.println("Desconto no ebook não pode ser maior do que 15%.\n");
+        } else {
+            System.out.printf("Valor no ebook com desconto: R$%.2f\n", ebook.getPreco());
+        }
     }
 };
