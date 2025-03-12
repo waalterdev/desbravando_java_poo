@@ -44,7 +44,21 @@ public abstract class Livro implements Produto {
         return "Nome: " + nome
         + "\nDescrição: " + descricao
         + "\nPreço: " + preco
-        + "\nISBN " + isbn;
+        + "\nISBN " + isbn
+        + "\n----";
+    }
+
+    @Override
+    public int compareTo(Produto outro) {
+        if (this.getPreco() < outro.getPreco()) {
+            return -1;
+        }
+
+        if (this.getPreco() > outro.getPreco()) {
+            return 1;
+        }
+
+        return 0;
     }
 
     // Getters e setters 

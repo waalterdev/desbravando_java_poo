@@ -1,36 +1,32 @@
 package com.desbravando_java_poo.teste;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-import com.desbravando_java_poo.CarrinhoDeCompras;
+import com.desbravando_java_poo.produtos.Produto;
 import com.desbravando_java_poo.livraria.Autor;
 import com.desbravando_java_poo.produtos.Ebook;
 import com.desbravando_java_poo.produtos.LivroFisico;
-import com.desbravando_java_poo.produtos.Produto;
 
-public class Main {
+public class OrdenandoComJava {
     public static void main(String[] args) {
         Autor autor = new Autor();
         autor.setNome("Sherman Walter");
 
         LivroFisico fisico = new LivroFisico(autor);
-        fisico.setNome("Livro Físico");
-        fisico.setPreco(50);
+        fisico.setNome("Livro 1");
+        fisico.setPreco(25.90);
 
         Ebook ebook = new Ebook(autor);
-        ebook.setNome("Ebook");
-        ebook.setPreco(50);
+        ebook.setNome("Ebook 1");
+        ebook.setPreco(24.90);
 
-        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
-        carrinho.adiciona(ebook);
-        carrinho.adiciona(fisico);
+        List<Produto> produtos = Arrays.asList(fisico, ebook);
 
-        List<Produto> produtos = carrinho.getProdutos();
-
+        Collections.sort(produtos);
         for (Produto produto : produtos) {
             System.out.println(produto);
         }
-
-        System.out.printf("Total : R$%.2f", carrinho.getTotal());
     }
-};
+}

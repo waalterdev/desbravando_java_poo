@@ -42,4 +42,16 @@ public class Revista implements Produto, Promocional {
         setPreco(getPreco() - desconto);
         return true;
     }
+
+    public int compareTo(Produto outro) {
+        if (this.getPreco() < outro.getPreco()) {
+            return -1;
+        }
+
+        if (this.getPreco() > outro.getPreco()) {
+            return 1;
+        }
+
+        return 0;
+    }
 }
