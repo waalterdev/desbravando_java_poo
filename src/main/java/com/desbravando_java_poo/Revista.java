@@ -1,6 +1,6 @@
 package com.desbravando_java_poo;
 
-public class Revista {
+public class Revista implements Produto {
     private String nome;
     private String descricao;
     private double preco;
