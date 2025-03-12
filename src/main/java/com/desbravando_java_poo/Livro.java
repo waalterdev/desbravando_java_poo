@@ -1,17 +1,15 @@
 package com.desbravando_java_poo;
 
-public class Livro {
+public abstract class Livro {
     private String nome;
     private String descricao;
     private double preco;
     private String isbn;
     private Autor autor;
-    private boolean impresso;
 
     public Livro(Autor autor) {
         this.autor = autor;
         this.isbn = "000-00-00000-00-0";
-        this.impresso = true;
     }
 
     void mostrarDetalhes() {

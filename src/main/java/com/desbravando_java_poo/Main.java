@@ -8,15 +8,7 @@ public class Main {
         Autor autor = new Autor();
         autor.setNome("Sherman Walter");
 
-        LivroFisico fisico = new LivroFisico(autor);
-        fisico.setNome("Test-Driven Development");
-        fisico.setPreco(59.90);
+        Livro livro = new MiniLivro(autor);
         
-        Ebook ebook = new Ebook(autor);
-        ebook.setNome("Test-Driven Development Ebook");
-        ebook.setPreco(29.90);
-
-        carrinho.adiciona(ebook);
-        carrinho.adiciona(fisico);
     }
 };
