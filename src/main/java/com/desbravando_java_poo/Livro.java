@@ -27,14 +27,7 @@ public abstract class Livro {
         }
     }
 
-    public boolean aplicarDesconto(double porcentagem) {
-        if (porcentagem > 0.3) {
-            return false;
-        }
-
-        this.preco -= this.preco * porcentagem;
-        return true;
-    }
+    public abstract boolean aplicarDesconto(double porcentagem);
 
     public boolean temAutor() {
         return this.autor != null;
